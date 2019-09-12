@@ -1,37 +1,185 @@
 import React, { Component } from "react";
-import './App.css';
+import logo from './logo.png';
 import './zero.css';
+import './App.css';
+import MaterialIcon, { colorPalette } from 'material-icons-react';
 
-function App() {
-  return (
-    <main>
-      <div className="col col-6 col-m-12 half-left">
-        a
-      </div>
-      <div className="col col-6 col-m-12 half-right">
-
-        <div className="card">
-          <div class='col-1 col-s-12 d-flex flex-center'>
-            s
-          </div>
-          <div class='col-10 col-s-12 list-frame'>
-            <div className="title-frame">
-              <p>mengerjakan pr mengerjakan pr mengerjakan pr</p>
+class App extends Component {
+  render() {
+    return (
+      <main>
+        <div className="col col-5 col-m-12 half-left">
+          <div className="todo-frame">
+            <div className="logo-frame d-flex flex-center">
+              <img src={logo} alt="" className='logo-brand' />
             </div>
-            <div className="tag-frame">
-              <div className="tag">school</div>
-              <div className="tag">school</div>
-              <div className="tag">school</div>
-            </div>
-          </div>
-          <div class='col-1 col-s-12 d-flex flex-center'>
-            s
+            <form>
+              <div className="form-input">
+                <input type="text" required=" " />
+                <label>Enter New Todo </label>
+              </div>
+              <div className="tag-frame">
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+              </div>
+            </form>
           </div>
         </div>
+        <div className="col col-7 col-m-12 half-right">
 
-      </div>
-    </main>
-  );
+          <div className="card">
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              <input type="checkbox" />
+            </div>
+            <div className='col-10 col-s-12 list-frame'>
+              <div className="title-frame">
+                <p>mengerjakan mengerjakan</p>
+              </div>
+              <div className="tag-frame">
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+              </div>
+            </div>
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              {/* <MaterialIcon icon="dashboard" /> */}
+              {/* <i className="fas fa-user-edit"></i> */}
+              <i className="material-icons">delete</i>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              <input type="checkbox" />
+            </div>
+            <div className='col-10 col-s-12 list-frame'>
+              <div className="title-frame">
+                <p>mengerjakan mengerjakan</p>
+              </div>
+              <div className="tag-frame">
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+              </div>
+            </div>
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              {/* <MaterialIcon icon="dashboard" /> */}
+              {/* <i className="fas fa-user-edit"></i> */}
+              <i className="material-icons">delete</i>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              <input type="checkbox" />
+            </div>
+            <div className='col-10 col-s-12 list-frame'>
+              <div className="title-frame">
+                <p>mengerjakan mengerjakan</p>
+              </div>
+              <div className="tag-frame">
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+              </div>
+            </div>
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              {/* <MaterialIcon icon="dashboard" /> */}
+              {/* <i className="fas fa-user-edit"></i> */}
+              <i className="material-icons">delete</i>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              <input type="checkbox" />
+            </div>
+            <div className='col-10 col-s-12 list-frame'>
+              <div className="title-frame">
+                <p>mengerjakan mengerjakan</p>
+              </div>
+              <div className="tag-frame">
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+              </div>
+            </div>
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              {/* <MaterialIcon icon="dashboard" /> */}
+              {/* <i className="fas fa-user-edit"></i> */}
+              <i className="material-icons">delete</i>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              <input type="checkbox" />
+            </div>
+            <div className='col-10 col-s-12 list-frame'>
+              <div className="title-frame">
+                <p>mengerjakan mengerjakan</p>
+              </div>
+              <div className="tag-frame">
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+              </div>
+            </div>
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              {/* <MaterialIcon icon="dashboard" /> */}
+              {/* <i className="fas fa-user-edit"></i> */}
+              <i className="material-icons">delete</i>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              <input type="checkbox" />
+            </div>
+            <div className='col-10 col-s-12 list-frame'>
+              <div className="title-frame">
+                <p>mengerjakan mengerjakan</p>
+              </div>
+              <div className="tag-frame">
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+              </div>
+            </div>
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              {/* <MaterialIcon icon="dashboard" /> */}
+              {/* <i className="fas fa-user-edit"></i> */}
+              <i className="material-icons">delete</i>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              <input type="checkbox" />
+            </div>
+            <div className='col-10 col-s-12 list-frame'>
+              <div className="title-frame">
+                <p>mengerjakan mengerjakan</p>
+              </div>
+              <div className="tag-frame">
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+                <div className="tag">school</div>
+              </div>
+            </div>
+            <div className='col-1 col-s-12 d-flex flex-center'>
+              {/* <MaterialIcon icon="dashboard" /> */}
+              {/* <i className="fas fa-user-edit"></i> */}
+              <i className="material-icons">delete</i>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    )
+  }
+
 }
 
 export default App;
