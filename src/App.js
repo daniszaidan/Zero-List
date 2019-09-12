@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from './logo.png';
 import './zero.css';
 import './App.css';
-import MaterialIcon, { colorPalette } from 'material-icons-react';
+// import MaterialIcon, { colorPalette } from 'material-icons-react';
 
 class App extends Component {
   render() {
@@ -19,10 +19,12 @@ class App extends Component {
                 <label>Enter New Todo </label>
               </div>
               <div className="tag-frame">
-                <div className="tag">school</div>
-                <div className="tag">school</div>
-                <div className="tag">school</div>
+                <div className="tag">School</div>
+                <div className="tag">Work</div>
+                <div className="tag">Home</div>
+                <div className="tag">Sport</div>
               </div>
+              <button type="button" class="btn btn-default">Add New Todo</button>
             </form>
           </div>
         </div>
