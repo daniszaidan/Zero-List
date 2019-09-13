@@ -45,6 +45,17 @@ form .tag-frame{
   overflow-y: auto;
   background-color: #f7fafc;
 }
+.half-right::-webkit-scrollbar{
+	width: 10px;
+	height: 10px;
+	background-color: #eee;
+  /* border-radius: 5px; */
+}
+.half-right::-webkit-scrollbar-thumb{
+	background-color: #b3b3b3;
+	height: 5px;
+	border-radius: 5px;
+}
 .half-right .card{
   margin: 30px 0;
   display: flex;
@@ -69,15 +80,21 @@ form .tag-frame{
   margin-top: 10px;
 }
 .tag{
-  border: 2px solid #5d5d5d;
+  background-color: #e6e6e6;
   margin: 5px;
-  padding: 3px 10px;
+  padding: 5px 13px;
   border-radius: 5px;
   float: left;
   font-size: .9rem;
   cursor: pointer;
+  font-weight: 400;
+  color: #737373;
+  transition: all .3s;
 }
-
+.tag:hover{
+  background-color: #cccccc;
+  color: #5d5d5d;
+}
 form .form-input{
 	width: 100%;
 	height: auto;
@@ -121,6 +138,14 @@ form .form-input input:valid ~ label{
 }
 form .form-input input:focus{
 	border-bottom: 2px solid #1a73e8;
+}
+.delete-button{
+  color: #F5473A;
+  transition: all .3s;
+}
+.delete-button:hover {
+    color: #da190b;
+    cursor: pointer;
 }
 
 /*Tablet (Smaller 760px)*/
