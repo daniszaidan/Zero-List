@@ -3,6 +3,7 @@ import logo from './logo.png';
 import './zero.css';
 import './App.css';
 import TodoList from "./TodoList";
+import TodoInput from "./TodoInput";
 // import MaterialIcon, { colorPalette } from 'material-icons-react';
 
 class App extends Component {
@@ -14,19 +15,7 @@ class App extends Component {
             <div className="logo-frame d-flex flex-center">
               <img src={logo} alt="" className='logo-brand' />
             </div>
-            <form>
-              <div className="form-input">
-                <input type="text" required=" " />
-                <label>Enter New Todo </label>
-              </div>
-              <div className="tag-frame">
-                <div className="tag">School</div>
-                <div className="tag">Work</div>
-                <div className="tag">Home</div>
-                <div className="tag">Sport</div>
-              </div>
-              <button type="button" class="btn btn-default">Add New Todo</button>
-            </form>
+            <TodoInput />
           </div>
         </div>
         <div className="col col-7 col-m-12 half-right">
