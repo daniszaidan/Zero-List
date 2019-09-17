@@ -12,7 +12,7 @@ export default class TodoList extends Component {
                         <div className='col-1 col-s-12 d-flex flex-center'>
                             <input type="checkbox" />
                         </div>
-                        <div className='col-10 col-s-12 list-frame'>
+                        <div className='col-9 col-s-12 list-frame'>
                             <div className="title-frame">
                                 <p>{item.title}</p>
                             </div>
@@ -22,7 +22,8 @@ export default class TodoList extends Component {
                                 <div className="tag">school</div>
                             </div>
                         </div>
-                        <div className='col-1 col-s-12 d-flex flex-center'>
+                        <div className='col-2 col-s-12 d-flex flex-center'>
+                            <i className="material-icons edit-button">edit</i>
                             <i className="material-icons delete-button">delete</i>
                         </div>
                     </div>

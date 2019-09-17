@@ -139,12 +139,21 @@ form .form-input input:valid ~ label{
 form .form-input input:focus{
 	border-bottom: 2px solid #1a73e8;
 }
+.edit-button{
+  color: #74B087;
+  transition: all .3s;
+  margin-right: 10px;
+}
 .delete-button{
   color: #F5473A;
   transition: all .3s;
 }
 .delete-button:hover {
     color: #da190b;
+    cursor: pointer;
+}
+.edit-button:hover {
+    color: #49835c;
     cursor: pointer;
 }
 
