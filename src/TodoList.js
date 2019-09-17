@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class TodoList extends Component {
     render() {
 
-        const { items, handleDelete } = this.props;
+        const { items, handleDelete, handleEdit } = this.props;
 
         return (
             items.map(item => {
@@ -23,7 +23,7 @@ export default class TodoList extends Component {
                             </div>
                         </div>
                         <div className='col-2 col-s-12 d-flex flex-center'>
-                            <i className="material-icons edit-button">edit</i>
+                            <i className="material-icons edit-button" onClick={() => handleEdit(item.id)}>edit</i>
                             <i className="material-icons delete-button" onClick={() => handleDelete(item.id)}>delete</i>
                         </div>
                     </div>

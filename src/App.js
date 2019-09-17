@@ -46,6 +46,10 @@ class App extends Component {
     });
   };
 
+  handleEdit = id => {
+    console.log(id);
+  };
+
   handleDelete = id => {
     const filteredItems = this.state.items.filter(item => item.id !== id);
     this.setState({
@@ -72,6 +76,7 @@ class App extends Component {
 
           <TodoList
             items={this.state.items}
+            handleEdit={this.handleEdit}
             handleDelete={this.handleDelete}
           />
 
