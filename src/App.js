@@ -29,7 +29,7 @@ class App extends Component {
       title: this.state.item
     };
 
-    const updatedItems = [...this.state.items, newItem];
+    const updatedItems = [newItem, ...this.state.items];
 
     this.setState({
       items: updatedItems,
@@ -38,6 +38,19 @@ class App extends Component {
       editItem: false
     });
 
+  };
+
+  clearList = () => {
+    this.setState({
+      items: []
+    });
+  };
+
+  handleDelete = id => {
+    const filteredItems = this.state.items.filter(item => item.id !== id);
+    this.setState({
+      items: filteredItems
+    });
   };
 
   render() {
@@ -57,7 +70,10 @@ class App extends Component {
         </div>
         <div className="col col-7 col-m-12 half-right">
 
-          <TodoList items={this.state.items} />
+          <TodoList
+            items={this.state.items}
+            handleDelete={this.handleDelete}
+          />
 
         </div>
       </main>
