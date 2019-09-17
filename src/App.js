@@ -7,6 +7,39 @@ import TodoInput from "./TodoInput";
 // import MaterialIcon, { colorPalette } from 'material-icons-react';
 
 class App extends Component {
+
+  state = {
+    items: [],
+    id: 0,
+    item: "",
+    editItem: false
+  };
+
+  handleChange = e => {
+    this.setState({
+      item: e.target.value
+    });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+
+    const newItem = {
+      id: Date.now(),
+      title: this.state.item
+    };
+
+    const updatedItems = [...this.state.items, newItem];
+
+    this.setState({
+      items: updatedItems,
+      item: "",
+      id: 0,
+      editItem: false
+    });
+
+  };
+
   render() {
     return (
       <main>
@@ -15,17 +48,16 @@ class App extends Component {
             <div className="logo-frame d-flex flex-center">
               <img src={logo} alt="" className='logo-brand' />
             </div>
-            <TodoInput />
+            <TodoInput
+              item={this.state.item}
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+            />
           </div>
         </div>
         <div className="col col-7 col-m-12 half-right">
 
-          <TodoList />
-          <TodoList />
-          <TodoList />
-          <TodoList />
-          <TodoList />
-          <TodoList />
+          <TodoList items={this.state.items} />
 
         </div>
       </main>
