@@ -4,7 +4,6 @@ import './zero.css';
 import './App.css';
 import TodoList from "./TodoList";
 import TodoInput from "./TodoInput";
-// import MaterialIcon, { colorPalette } from 'material-icons-react';
 
 class App extends Component {
 

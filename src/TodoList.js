@@ -10,11 +10,14 @@ export default class TodoList extends Component {
                 return (
                     <div className="card" key={item.id}>
                         <div className='col-1 col-s-12 d-flex flex-center'>
-                            <input
-                                type="checkbox"
-                                onChange={() => { handleComplete(item.id) }}
-                                checked={item.completed}
-                            />
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    onChange={() => { handleComplete(item.id) }}
+                                    checked={item.completed}
+                                />
+                                <span className="label-text"></span>
+                            </label>
                         </div>
                         <div className='col-9 col-s-12 list-frame'>
                             <div className="title-frame">
@@ -27,8 +30,8 @@ export default class TodoList extends Component {
                             </div>
                         </div>
                         <div className='col-2 col-s-12 d-flex flex-center'>
-                            <i className="material-icons edit-button" onClick={() => handleEdit(item.id)}>edit</i>
-                            <i className="material-icons delete-button" onClick={() => handleDelete(item.id)}>delete</i>
+                            <i class="fas edit-button fa-pen" onClick={() => handleEdit(item.id)}></i>
+                            <i class="fas delete-button fa-trash" onClick={() => handleDelete(item.id)}></i>
                         </div>
                     </div>
                 )

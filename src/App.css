@@ -146,11 +146,13 @@ form .form-input input:focus{
 .edit-button{
   color: #74B087;
   transition: all .3s;
-  margin-right: 10px;
+  margin-right: 15px;
+  font-size: 1.2rem;
 }
 .delete-button{
   color: #F5473A;
   transition: all .3s;
+  font-size: 1.2rem;
 }
 .delete-button:hover {
     color: #da190b;
@@ -168,6 +170,28 @@ form .form-input input:focus{
 .todo-completed{
   margin-top: 50px;
   font-weight: 400;
+}
+
+input[type='checkbox']{
+  display: none;
+}
+input[type='checkbox'] + .label-text:before{
+  content: "\f096";
+  font-family: "FontAwesome";
+  /* speak: none; */
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  width: 1em;
+  transition: all .3s;
+  cursor: pointer;
+}
+input[type='checkbox']:checked + .label-text:before{
+  content: "\f14a";
+  color: #5d5d5d;
 }
 
 /*Tablet (Smaller 760px)*/
