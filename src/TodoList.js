@@ -3,14 +3,18 @@ import React, { Component } from "react";
 export default class TodoList extends Component {
     render() {
 
-        const { items, handleDelete, handleEdit } = this.props;
+        const { items, handleDelete, handleEdit, handleComplete } = this.props;
 
         return (
             items.map(item => {
                 return (
                     <div className="card" key={item.id}>
                         <div className='col-1 col-s-12 d-flex flex-center'>
-                            <input type="checkbox" />
+                            <input
+                                type="checkbox"
+                                onChange={() => { handleComplete(item.id) }}
+                                checked={item.completed}
+                            />
                         </div>
                         <div className='col-9 col-s-12 list-frame'>
                             <div className="title-frame">
