@@ -41,6 +41,9 @@ form{
   display: grid;
   width: 100%;
 }
+form .btn{
+  margin-top: 20px;
+}
 form .tag-frame{
   margin-top: 0;
   margin-bottom: 30px;

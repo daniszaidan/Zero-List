@@ -23,11 +23,6 @@ export default class TodoList extends Component {
                             <div className="title-frame">
                                 <p>{item.title}</p>
                             </div>
-                            <div className="tag-frame">
-                                <div className="tag">school</div>
-                                <div className="tag">school</div>
-                                <div className="tag">school</div>
-                            </div>
                         </div>
                         <div className='col-2 col-s-12 d-flex flex-center'>
                             <i class="fas edit-button fa-pen" onClick={() => handleEdit(item.id)}></i>
